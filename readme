@@ -132,6 +132,25 @@ while(n<num):
 if(k==0):print(" PRIME ")
 else:print(" NOT PRIME ")
 
+#13) programme to find all numbers between 1000 and 3000 which have all digits as even
+ alleven=[]
+l=1000
+
+while(l<=3000):
     
+    r=0
+    if(l%2==0):
+        r=l%10
+        a=int((l-r)/10)
+        if(a%2==0):
+             r=a%10
+             a=int((a-r)/10)
+             if(a%2==0):
+                 r=a%10
+                 a=int((a-r)/10)
+                 if(a%2==0):
+                     alleven.append(l)
+    l=l+1
+print("List of all numbers between 1000 and 3000 which have all digits as even: ",alleven)   
 
     
